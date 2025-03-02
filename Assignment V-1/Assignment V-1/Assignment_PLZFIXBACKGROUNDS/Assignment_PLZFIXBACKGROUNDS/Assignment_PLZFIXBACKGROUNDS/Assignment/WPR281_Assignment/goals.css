@@ -1,0 +1,143 @@
+#logo img {
+    max-width: 150px; 
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, #5B595B, #1F1515);
+    text-align: center;
+    background-image: url('../Images/premium_photo-1672372475823-a76fc6910b32.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    color: red;
+    background-color: black; 
+
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .menu li {
+    list-style-type: none;
+    margin: 0 6px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    font-family: 'Orbitron',sans-serif;
+    color: red;
+    font-size: 17px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbar .menu a:hover {
+    color: darkred;
+}
+
+
+.goal-tracking {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.goal-tracking h1{
+    color: white;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.progress-bar-container {
+    position: relative;
+    width: 500px;
+    height: 2em;
+    background: white;
+    margin: 20px auto;
+    border-radius: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: .4em;
+    top: .4em;
+    bottom: .4em;
+    height: 1.2em;
+    width: calc(var(--width,0) * 1%);
+    min-width: 1rem;
+    max-width: calc(100% - 1em);
+    background: red;
+    border-radius: 1em;
+    transition: width 0.5s ease-in-out;
+}
+
+#motivation-message {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background: red;
+    font-family: 'Orbitron', sans-serif; 
+    color: white;
+    border: none;
+    border: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#goal-unit{
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif; 
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer{
+    color: red;
+    text-align: center;
+    justify-content: center;
+}

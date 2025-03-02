@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="workout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Workout Form</title>
+</head>
+<body>
+    
+    
+    <header>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="../Images/headerbckimg.jpg" alt="Logo">
+                </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="workout.html">Workout</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="timer.html">Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section class="grid-containers">
+
+
+        <div class="workout-form">
+            <form>
+                <h1>Workout Details</h1>
+                <label for="type">Workout Type:</label>
+                <input type="text" id="type" name="Exercise" placeholder="Please enter the type of excercise" required><br>
+
+                <label for="duration">Duration:</label>
+                <input type="time" name="Duration" id="duration"  placeholder="e.g. 40 Minutes"><br>
+
+                <label for="calories">Calories:</label>
+                <input type="number" name="Calories" id="calories"  placeholder="Please enter the calories lost"><br>
+
+                <label for="dateOfWorkout">Date:</label>
+                <input type="date" name="Date" id="dateOfWorkout" required><br>
+
+                <label for="areaOfFocus">Area of Focus:</label>
+                <select id="areaOfFocus" name="areaOfFocus" placeholder="Enter the focus on workout">
+                    <option value="strenth">Strength</option>
+                    <option value="flexibility">Flexibility</option>
+                    <option value="balance">Balance</option>
+                    <option value="endurance">Endurance</option>
+                </select><br>
+
+                <button class="button button-like">
+                    <i class="fa fa-heart"></i>
+                    <span>Like</span>
+                </button> 
+                
+                <label for="StartButton"></label>
+                <input type="submit" name="Start" id="startButton"><br>              
+            </form>
+        </div>
+
+
+        
+        <div class="container">
+            <h1>Workout Ideas:</h1>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/lotus.png">
+                </div>
+                <ul type="square">
+                    <h2>Yoga</h2>
+                    <li>Duration: 30–90 minutes per session, depending on intensity and type.</li>
+                    <li>Calories Burned: 150–500 kcal per hour (depends on style; e.g., Hatha burns less than Power Yoga).</li>
+                    <li>Best Time: Morning (for energy and focus) or evening (for relaxation)</li>
+                    <li>Improves: Flexibility, balance, and some strength.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/hiking.png">
+                </div>
+                <ul type="square">
+                    <h2>Hiking</h2>
+                    <li>Duration: 1–5 hours, depending on trail difficulty</li>
+                    <li>Calories Burned: 350–700 kcal per hour (varies with incline and backpack weight).</li>
+                    <li>Best Time: Morning or late afternoon (to avoid extreme heat).</li>
+                    <li>Improves: Endurance, strength (especially legs and core), and balance.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/running.png">
+                </div>
+                <ul type="square">
+                    <h2>Running</h2>
+                    <li>Duration: 20–60 minutes per session.</li>
+                    <li>Calories Burned: 600–1,000 kcal per hour (depends on speed and intensity).</li>
+                    <li>Best Time: Morning (boosts metabolism) or evening (improves performance)</li>
+                    <li>Improves: Endurance, strength (legs and core), and some balance.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/swimming.png">
+                </div>
+                <ul type="square">
+                    <h2>Swimming</h2>
+                    <li>Duration: 30–60 minutes per session.</li>
+                    <li>Calories Burned: 400–700 kcal per hour</li>
+                    <li>Best Time: Morning (energizing) or afternoon (muscle recovery).</li>
+                    <li>Improves: Endurance, strength (full-body workout), and flexibility.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/bicycle.png">
+                </div>
+                <ul type="square">
+                    <h2>Cycling</h2>
+                    <li>Duration: 30–90 minutes per session.</li>
+                    <li>Calories Burned: 400–1,000 kcal per hour (depends on speed and resistance).</li>
+                    <li>Best Time: Morning (fresh air) or late afternoon (better endurance).</li>
+                    <li>Improves: Endurance, strength (legs), and balance.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/walk.png">
+                </div>
+                <ul type="square">
+                    <h2>Walking</h2>
+                    <li>Duration: 30–60 minutes per session.</li>
+                    <li>Calories Burned: 200–400 kcal per hour.</li>
+                    <li>Best Time: Morning (refreshing), after meals (aids digestion), or evening (relaxing)</li>
+                    <li>Improves: Endurance, balance, and light strength (legs).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../Images/gym.png">
+                </div>
+                <ul type="square">
+                    <h2>Gyming</h2>
+                    <li>Duration: 45–90 minutes per session.</li>
+                    <li>Calories Burned: 300–700 kcal per hour (depends on exercise type).</li>
+                    <li>Best Time: Morning (boosts metabolism) or evening (higher strength levels).</li>
+                    <li>Improves: Strength, endurance, and some balance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>© 2025 JUMP. All Rights Reserved.</p>
+    </footer>
+    <script src="workout.js"></script>
+    <script src="statistics.js"></script>
+</body>
+</html>

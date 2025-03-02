@@ -1,0 +1,258 @@
+#logo img {
+    max-width: 150px; 
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    background-image: url('../Images/premium_photo-1672372475823-a76fc6910b32.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    color: red;
+    background-color: black; 
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .menu li {
+    list-style-type: none;
+    margin: 0 6px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    font-family: 'Orbitron',sans-serif;
+    color: red;
+    font-size: 17px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbar .menu a:hover {
+    color: darkred;
+}
+
+
+.grid-containers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center; 
+    align-items: center; 
+}
+
+.workout-form{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    border: 500cm;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    border-color: gray;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.1);
+    width: 60%; 
+    height: auto; 
+    padding: 5px; 
+}
+
+
+.workout-form input[type="text"],
+.workout-form input[type="time"],
+.workout-form input[type="number"],
+.workout-form input[type="date"],
+.workout-form select,
+.workout-form input[type="button"] {
+    width: 100%;  
+    padding: 5px;  
+    margin-bottom: 15px;  
+    box-sizing: border-box; 
+}
+
+
+
+.button-like {
+    border: 2px solid white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3rem;
+    color: white;
+    transition: all ease 0.4s;
+}
+
+.button-like span {
+    margin-left: 0.5rem;
+}
+  
+.button-like .fa,
+.button-like span {
+    transition: all ease 0.4s;
+}
+  
+.button-like:focus {
+    background-color: transparent;
+}
+  
+.button-like:focus .fa,
+.button-like:focus span {
+    color: #8a8a8a;
+}
+  
+.button-like:hover {
+    border-color: #cc4b37;
+    background-color: transparent;
+}
+  
+.button-like:hover .fa,
+.button-like:hover span {
+    color: #cc4b37;
+}
+  
+.liked {
+    background-color: #cc4b37;
+    border-color: #cc4b37;
+}
+  
+.liked .fa,
+.liked span {
+    color: #fefefe;
+}
+  
+.liked:focus {
+    background-color: #cc4b37;
+}
+  
+.liked:focus .fa,
+.liked:focus span {
+    color: #fefefe;
+}
+  
+.liked:hover {
+    background-color: #cc4b37;
+    border-color: #cc4b37;
+}
+  
+.liked:hover .fa,
+.liked:hover span {
+    color: #fefefe;
+}
+    
+
+input[type=submit] {
+    border: 2px solid white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3rem;
+    color: white;
+    transition: all ease 0.4s;
+}
+
+input[type=submit]:hover {
+    background-color: transparent;
+    color: red;
+    border-color: red;
+}
+
+
+.container{
+    grid-column: 1/5;
+    grid-row: 2/5; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.container h1{
+    color: white;
+    text-align: center;
+}
+
+.container .card{
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    border-radius: 12px;
+    background-color: lightgray;
+    color: black;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+    width: 300px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.card .card-image{
+    width: 150px;
+    padding:4px;
+    border-radius: 50%;
+}
+
+.card-image img{
+    height: auto;
+    max-width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.card h2{
+    margin-top: 25px;
+    color: gray;
+    font-size: 22px;
+    font-weight: 18px;
+}
+
+.card{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+    text-align: center;
+}
+
+
+footer{
+    color: red;
+    text-align: center;
+    justify-content: center;
+}
+

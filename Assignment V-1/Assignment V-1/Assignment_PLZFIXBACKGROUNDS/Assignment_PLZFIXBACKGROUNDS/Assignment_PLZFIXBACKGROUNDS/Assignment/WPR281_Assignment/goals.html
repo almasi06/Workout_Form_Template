@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals</title>
+    <link rel="stylesheet" href="goals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="goals.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="../Images/headerbckimg.jpg" alt="Logo">
+                </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="workout.html">Workout</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="timer.html">Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="goal-tracking">
+        <h1>Set Your Fitness Goals</h1>
+        <input type="number" id="goal" placeholder="Enter your goal (e.g., Run 10 miles)">
+        <input type="number" id="goal-progress" placeholder="Progress (e.g., 5 miles)">
+        <select id = "goal-unit">
+            <option value="miles">Miles</option>
+            <option value="minutes">Kilometers</option>  
+            <option value="calories">Calories</option>
+            <option value="steps">Steps</option>
+            <option value="minutes">Minutes</option>   
+        </select>
+        <button onclick="updateProgress()">Update Progress</button>
+        <div class="progress-bar-container">
+            <div class="progress-bar" style="--width:5" id="progress-bar"></div>
+        </div>
+        <p id="motivation-message"></p>
+       
+        
+        
+      
+    </section>
+
+    <footer>
+        <p>© 2025 JUMP. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>

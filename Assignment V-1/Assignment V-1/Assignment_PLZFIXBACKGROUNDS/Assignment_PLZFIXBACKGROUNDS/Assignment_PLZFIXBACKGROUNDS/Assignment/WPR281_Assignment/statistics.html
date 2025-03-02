@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Statistics</title>
+    <link rel="stylesheet" href="statistics.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="../Images/headerbckimg.jpg" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="workout.html">Workout</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="timer.html">Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="stats-container">
+        <h1>Workout Statistics</h1>
+        <div class="stats-grid">
+            <div class="stat-box">Total Workouts: <span id="total-workouts">0</span></div>
+            <div class="stat-box">Total Calories Burned: <span id="total-calories">0</span></div>
+            <div class="stat-box">Average Workout Duration: <span id="avg-duration">0</span> hours</div>
+        </div>
+        
+        <canvas id="workoutChart"></canvas>
+        <button onclick="window.print()">Print Workout Summary</button>
+        <button id="clear-storage-button">Clear</button>
+    </section>
+    <div>
+        <canvas id="myChart"></canvas>
+        <div id="workoutHistory">
+            <h1>Workout History</h1>
+            <ol id="exerciseList">
+              
+            </ol>
+        </div>
+    </div>
+   
+
+    <footer>
+        <p>© 2025 JUMP. All Rights Reserved.</p>
+    </footer>
+    <script src="statistics.js"></script>
+</body>
+</html>
